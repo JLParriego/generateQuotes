@@ -1,8 +1,16 @@
+/* Quote Generator */
+
 html{
     /* prevent adding extra height or weight to the page */
     box-sizing: border-box;
 }
 body{
+    /* Eliminate margins */
     margin: 0;
+    /* the body covers 100% of viewport or screen */
     min-height: 100vh;
+    background-image:url('images/coolBackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
