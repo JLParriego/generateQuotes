@@ -1,16 +1,103 @@
 /* Quote Generator */
 
-html{
-    /* prevent adding extra height or weight to the page */
-    box-sizing: border-box;
+/* Google Font Commissioner */
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@500&display=swap");
+
+html {
+  /* prevent adding extra height or weight to the page */
+  box-sizing: border-box;
 }
-body{
-    /* Eliminate margins */
-    margin: 0;
-    /* the body covers 100% of viewport or screen */
-    min-height: 100vh;
-    background-image:url('images/coolBackground.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+  /* Eliminate margins */
+  margin: 0;
+  /* the body covers 100% of viewport or screen */
+  min-height: 100vh;
+  /* Background covers 100% of viewport */
+  background-image: url("images/coolBackground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Font */
+  color: black;
+  font-family: "Commissioner", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  /* flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quote-container {
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+.quote-text {
+  /* change size with html element - usually 1rem  = 16px as default value - good for responsive design */
+  font-size: 2.75rem;
+}
+.long-quote {
+  font-size: 2rem;
+}
+
+.fa-quote-left {
+  font-size: 4rem;
+}
+.quote-author {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.button-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background: #333;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover{
+  color: #38a1f3;
+}
+
+.fa-twitter{
+  font-size: 1.5rem;
+}
+#new-quote:hover{
+  color: #fc5;
+}
+
+/* Media Query to tablets and mobiles */
+
+@media screen and (max-width: 1000px) {
+  .quote-container {
+    margin: auto 10px;
+  }
+  .quote-text {
+    font-size: 2.5rem;
+  }
 }
