@@ -6,3 +6,14 @@ https://fontawesome.com/
 
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
+http://forismatic.com/en/
+
+https://quotes-react.netlify.app/
+
+choosen:
+https://type.fit/api/quotes
+
+https://unsplash.com/documentation
+
+
+

@@ -16,18 +16,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body id="bigBody">
+    <!-- clock  -->
+    <div id="clock-container">
+      <div class="clock" id="clock"></div>
+    </div>
     <div class="quote-container" id="quote-container">
       <!-- Quote -->
       <div class="quote-text">
         <i class="fas fa-quote-left"></i>
-        <span id="quote"
-          >De la conducta de cada uno depende el destino de todos</span
-        >
+        <span id="quote"></span>
       </div>
       <!-- Author -->
       <div class="quote-author">
-        <span id="author">Alejandro Magno</span>
+        <span id="author"></span>
       </div>
       <!-- Buttons  -->
       <div class="button-container">
@@ -37,6 +39,19 @@
         <button id="new-quote">New Quote</button>
       </div>
     </div>
+
+
+
+    <footer>
+      <div class="description-container" id="description-container">
+        <p id="description"></p>
+        <p id="name"></p>
+      </div>
+    </footer>
+
+
+    <!-- loader  -->
+    <div class="loader" id="loader"></div>
 
     <!-- Script -->
     <script src="script.js"></script>
